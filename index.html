@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" type="image/gif" href="https://i.postimg.cc/V6hzcqGq/t.png"/>
+    <title>Dynamic Dashboard</title>
+</head>
+<body>
+      <h1>LITERACY RATE IN TELANGANA - CENSUS 2011</h1>  
+      <section>
+        <div class="card">
+          <p>MALE LITERATES</p>
+          <span id="maleCount">0</span>
+        </div>
+        <div class="card">
+          <p>FEMALE LITERATES</p>
+          <span id="femaleCount">0</span>
+        </div>
+        <div class="card">
+          <p>MALE LITERACY (%)</p>
+          <span id="malepercent">0</span>
+        </div>
+        <div class="card">
+          <p>FEMALE LITERACY (%)</p>
+          <span id="femalepercent">0</span>
+        </div>
+      </section>  
+      <canvas style ="margin-top:150px" id="myChart"></canvas>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <script src="app.js"></script>
+</body>
+</html>
