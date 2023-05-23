@@ -9,26 +9,39 @@
     <title>Dynamic Dashboard</title>
 </head>
 <body>
-      <h1>LITERACY RATE IN TELANGANA - CENSUS 2011</h1>  
-      <section>
-        <div class="card">
-          <p>MALE LITERATES</p>
-          <span id="maleCount">0</span>
+      <h1>DEMOGRAPHICS & LITERACY DATA IN TELANGANA - CENSUS 2011</h1>  
+      <div class="container1">  
+        <div class="drop-down">
+          <select id="mylist">
+            <option>Select</option>
+            <option >Male</option>
+            <option >Female</option>
+          </select>
         </div>
-        <div class="card">
-          <p>FEMALE LITERATES</p>
-          <span id="femaleCount">0</span>
+        <div class="chart">
+          <p>DISTRICT WISE LITERATES</p>  
+          <canvas id="myChartBar" style="max-width: 500px; height: 150px;"></canvas>
         </div>
-        <div class="card">
-          <p>MALE LITERACY (%)</p>
-          <span id="malepercent">0</span>
+        <div class="chart"> 
+          <p>DISTRICT WISE LITERACY PERCENTAGE</p>  
+          <canvas id="myChartDoughnut" style="max-width: 400px; margin-left:40px; max-height: 200px;"></canvas>
+        </div>   
+      </div> 
+
+      <div class="container2">  
+        <div class="chart">
+          <p>DISTRICT WISE POPULATION</p>  
+          <canvas id="myChartLine" style="max-width: 600px; height: 300px;"></canvas>
+        </div> 
+        <div class="chart"> 
+          <p>URBAN & RURAL POPULATION</p>  
+          <canvas id="myChartBar2" style="max-width: 600px; height: 180px;"></canvas>
         </div>
-        <div class="card">
-          <p>FEMALE LITERACY (%)</p>
-          <span id="femalepercent">0</span>
-        </div>
-      </section>  
-      <canvas style ="margin-top:150px" id="myChart"></canvas>
+        <div class="chart"> 
+          <p>URBAN & RURAL POPULATION PERCENTAGE</p>  
+          <canvas id="myChartMixed" style="max-width: 600px; height: 180px;"></canvas>
+        </div>   
+      </div> 
       <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
       <script src="app.js"></script>
 </body>
